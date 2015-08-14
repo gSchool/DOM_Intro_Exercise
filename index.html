@@ -1,38 +1,44 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <link href='http://fonts.googleapis.com/css?family=Work+Sans:400,700' rel='stylesheet' type='text/css'/>
   <meta charset="utf-8">
   <title>The DOM playground</title>
-  <style>
-  .selected{ font-weight: bold;}
-  </style>
-  <script>
-  console.log("JavaScript is alive");
-  </script>
+  <script src="scripts/app.js" type="text/JavaScript"></script>
+  <link rel="stylesheet" type="text/css" href="bower_components/normalize.css/normalize.css">
+  <link rel="stylesheet" type="text/css" href="css/styles.css"/>
 </head>
 <body>
   <div id="greeting">
     Hello There!
   </div>
-  <hr>
-  <div class="content">
-    Essentials:
+  <div id= "main_content" class="content">
+    <h3>Essentials:</h3>
   </div>
 
   <div id="essentials">
     <ul>
-      <li>milk</li>
-      <li class="selected">honey</li>
-      <li>water</li>
-      <li>wine</li>
-      <li>beer</li>
+      <li data-food="milk">milk</li>
+      <li data-food="honey">honey</li>
+      <li data-food="water">water</li>
+      <li data-food="wine">wine</li>
+      <li data-food="beer">beer</li>
+      <li data-food="panic">panic</li>
     </ul>
+
+    <div id="essentials_preview">
+    <img height="60" width="60" alt="beer">
+    </div>
   </div>
 
-  <div>
-    <img src="./images/honey.jpeg" height="60" width="60" alt="beer">
-  </div>
+  
 
-  <input type="submit" value="Reset" id="reset"></input>
+
+  <div class="button_collection">
+    <input type="button" value="Reset" id="reset" class="button"/>
+    <input type="button" value="Change Greeting" id="change_greeting" onclick="changeGreeting()" class="button"/>
+    <input type="button" value="Yellow Essentials" id="yellowify" onclick="makeYellow()" class="button"/>
+    <input type="button" value="New List Item" id="new_list_item" onclick="createListItem()" class="button"/>
+  </div>
 </body>
 </html>
