@@ -2,10 +2,19 @@
 
 Practice manipulating the DOM!
 
-In the Chrome JS console practice selecting different elements on the page and doing something with it.
+In a separate JS file:
 
-For example:
+When the page loads:
 
-- When you click the word "milk", have an alert pop up that says "Milk"
-- When you click the word "wine" make the letters turn red
-- Can you think of any other fun events to make happen?
+- change the greeting from "Hello, There!" to "Hello, World!".
+
+- set the background color of each `<li>` to `yellow`.
+
+Afterwards: 
+
+3. add the class of `selected` to an `<li>` when it is clicked.
+
+4. change the image to be the most recently clicked food item.
+
+5. when the reset button is clicked - remove the `selected` class from
+  each `<li>` and change the image to `panic.jpeg`.
