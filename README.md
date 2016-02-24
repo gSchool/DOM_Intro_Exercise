@@ -6,15 +6,25 @@ In a separate JS file:
 
 When the page loads:
 
-- change the greeting from "Hello, There!" to "Hello, World!".
+1. Change the greeting from "Hello, There!" to "Hello, World!".
 
-- set the background color of each `<li>` to `yellow`.
+2. Set the background color of each `<li>` to `yellow`.
+
+3. Create an image tag, set its `src` attribute to `http://49.media.tumblr.com/tumblr_m6qt1rjPSz1rxjzkho1_500.gif`, and append the to the `#greeting` div.
 
 Afterwards: 
 
-3. add the class of `selected` to an `<li>` when it is clicked.
+4. Add the class of `selected` to an `<li>` when it is clicked. Remove it from any other `li`s as well.
 
-4. change the image to be the most recently clicked food item.
+5. Change the image to be the most recently clicked food item.
 
-5. when the reset button is clicked - remove the `selected` class from
-  each `<li>` and change the image to `panic.jpeg`.
+6. When the gray div is moused over, it's removed from the DOM.
+
+7. When the orange div is moused over, its width doubles. When the mouse moves out of the div, it returns to its original size.
+
+8. When the reset button is clicked - remove the `selected` class from
+  each `<li>`, change the image to `panic.jpeg`, and add the gray div back to the DOM if it has been removed.
+
+9. When the a, e, i, o, or u key is pressed, the page alerts the message "I HATE VOWELS!"
+
+BONUS: If someone types the [Konami Code](https://en.wikipedia.org/wiki/Konami_Code), the page alerts "YOU ARE AN EVENT HANDLER GURUUUUUUUUU!"

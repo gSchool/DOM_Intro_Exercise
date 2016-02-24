@@ -3,12 +3,8 @@
 <head>
   <meta charset="utf-8">
   <title>The DOM playground</title>
-  <style>
-  .selected{ font-weight: bold;}
-  </style>
-  <script>
-  console.log("JavaScript is alive");
-  </script>
+  <link rel="stylesheet" href="app.css">
+  <script src="app.js"></script>
 </head>
 <body>
   <div id="greeting">
@@ -31,6 +27,14 @@
 
   <div>
     <img src="./images/honey.jpeg" height="60" width="60" alt="beer">
+  </div>
+
+  <div id="ghosting">
+    Touch me and I'll disappear!
+  </div>
+
+  <div id="resize">
+    Touch me and I'll turn twice as wide!
   </div>
 
   <input type="submit" value="Reset" id="reset"></input>
