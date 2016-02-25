@@ -22,8 +22,7 @@ Afterwards:
 
 7. When the orange div is moused over, its width doubles. When the mouse moves out of the div, it returns to its original size.
 
-8. When the reset button is clicked - remove the `selected` class from
-  each `<li>`, change the image to `panic.jpeg`, and add the gray div back to the DOM if it has been removed.
+8. When the reset button is clicked - remove the `selected` class from each `<li>` and change the image to `panic.jpeg`.
 
 9. When the 1, 2, 3, 4, 5, 6, 7, 8, 9, or 0 key is pressed, the page alerts the message "I HATE NUMBERZZZ!"
 
