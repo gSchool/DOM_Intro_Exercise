@@ -45,6 +45,20 @@ var noDigits = function(e) {
   }
 };
 
+var idx = 0;
+
+var konamiCheck = function(e) {
+  var konamiCodeKeyCodes = [38,38,40,40,37,39,37,39,66,65];
+  if (e.keyCode === konamiCodeKeyCodes[idx]) {
+    idx++;
+    if (idx === konamiCodeKeyCodes.length) {
+      alert("YOU ARE AN EVENT HANDLER GURUUUUUUUUU!");
+    }
+  } else {
+    idx = 0;
+  }
+};
+
 var initialize = function(){
   changeGreetingAndAddGif();
   styleListElements();
@@ -52,7 +66,8 @@ var initialize = function(){
   document.querySelector("#ghosting").addEventListener("mouseover", function() { this.remove(); });
   document.querySelector("#resize").addEventListener("mouseenter", doubleWidth);
   document.querySelector("#resize").addEventListener("mouseleave", resetWidth);
-  document.querySelector("body").addEventListener("keypress", noDigits);
+  document.querySelector("body").addEventListener("keyup", noDigits);
+  document.querySelector("body").addEventListener("keyup", konamiCheck);
 };
 
 window.onload=initialize;
