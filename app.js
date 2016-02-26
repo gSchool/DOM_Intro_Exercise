@@ -69,4 +69,5 @@ var konamiCheck = function(e) {
   } else {
     idx = 0;
   }
+
 };
