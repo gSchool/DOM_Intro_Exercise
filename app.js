@@ -53,6 +53,7 @@ var konamiCheck = function(e) {
     idx++;
     if (idx === konamiCodeKeyCodes.length) {
       alert("YOU ARE AN EVENT HANDLER GURUUUUUUUUU!");
+      idx = 0;
     }
   } else {
     idx = 0;
