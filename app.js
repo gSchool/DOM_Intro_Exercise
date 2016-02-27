@@ -56,18 +56,21 @@ var noDigits = function(e) {
 
 // BONUS
 
-var idx = 0;
+var code = [];
 
 var konamiCheck = function(e) {
-  var konamiCodeKeyCodes = [38,38,40,40,37,39,37,39,66,65];
-  if (e.keyCode === konamiCodeKeyCodes[idx]) {
-    idx++;
-    if (idx === konamiCodeKeyCodes.length) {
-      alert("YOU ARE AN EVENT HANDLER GURUUUUUUUUU!");
-      idx = 0;
-    }
-  } else {
-    idx = 0;
-  }
+  var konamiCodeKeyCodes = "38384040373937396665";
 
+  if (code.length == 10) {
+    code.shift();
+    code.push(e.keyCode);    
+  } else code.push(e.keyCode);
+
+  var codeStr = "";
+  for (var i = 0; i < code.length; i++) {
+    codeStr += code[i];
+  }
+  if (codeStr === konamiCodeKeyCodes) {
+      alert("YOU ARE AN EVENT HANDLER GURUUUUUUUUU!");
+  } 
 };
