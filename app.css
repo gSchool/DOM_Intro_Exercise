@@ -1,5 +1,6 @@
-.selected { 
+.selected {
   font-weight: bold;
+  font-size:1.5em;
 }
 
 #ghosting, #resize {
@@ -9,7 +10,7 @@
 
 #ghosting {
   background-color: #ddd;
-}  
+}
 
 #resize {
   background-color: orange;
