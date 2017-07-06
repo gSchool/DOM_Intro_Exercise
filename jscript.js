@@ -154,7 +154,7 @@ var konami = function(e) {
         if (count == 10) {
             reset();
             // Do your stuff here
-            alert('Cheat Codes Activated');
+            alert("YOU ARE AN EVENT HANDLER GURUUUUUUUUU!");
 
         }
     } else {
