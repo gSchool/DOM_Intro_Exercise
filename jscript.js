@@ -129,3 +129,41 @@ document.onkeydown = function(e) {
             break;
     }
 };
+
+
+
+// --BONUS: If someone types the [Konami Code](https://en.wikipedia.org/wiki/Konami_Code), the page alerts "YOU ARE AN EVENT HANDLER GURUUUUUUUUU!"---
+
+
+var neededkeys = [38,38,40,40,37,39,37,39,66,65]
+var started = false;
+var count = 0;
+var konami = function(e) {
+    key = e.keyCode;
+    if (!started) {
+        if (key == 38) {
+            started = true;
+        }
+    }
+    if (started) {
+        if (neededkeys[count] == key) {
+            count++;
+        } else {
+            reset();
+        }
+        if (count == 10) {
+            reset();
+            // Do your stuff here
+            alert('Cheat Codes Activated');
+
+        }
+    } else {
+        reset();
+    }
+};
+function reset() {
+    started = false;
+    count = 0;
+}
+
+document.onkeydown = konami;
