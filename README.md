@@ -2,6 +2,8 @@
 
 Practice manipulating the DOM!
 
+## Part One:
+
 In a separate JS file:
 
 When the page loads:
@@ -11,6 +13,8 @@ When the page loads:
 2. Set the background color of each `<li>` to `yellow`.
 
 3. Create an image tag, set its `src` attribute to `http://49.media.tumblr.com/tumblr_m6qt1rjPSz1rxjzkho1_500.gif`, and append the to the `#greeting` div.
+
+## Part Two:
 
 Afterwards: 
 
